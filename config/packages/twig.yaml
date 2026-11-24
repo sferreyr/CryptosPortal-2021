@@ -1,0 +1,7 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    form_themes:
+        - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+    globals:
+        total_notifications: '@App\Service\NoticationsService' # The value is given by service it's variable  IN TWIG I NEED GIVE METHOD INTO SERVICE.
+        total_messages: '@App\Service\MessagesService' # The value is given by service it's variable  IN TWIG I NEED GIVE METHOD INTO SERVICE.

@@ -1,0 +1,89 @@
+#BASE.html.twig NAV
+Home: Inicio
+News: Noticias
+Market Cap: Cap. De Mercado
+Messages: Mensajes
+Notifications: Notificaciones
+Profile: Perfiles
+My Settings: Mis configuraciones
+Logout: Salir
+Register: Registrarse
+Login: Ingresar
+
+#BASE.html.twig SUBNAV
+New Post: Nuevo Post
+Featured Post: Posts Destacados
+Sticky Post: Posts Fijados
+
+#DashBoard.html.twig 
+FilterbyCategory: Filtrar por Categoria
+FilterbyTopic: Filtrar por Tema
+FilterbyLanguage: Filtrar por Lenguage
+LatestPost: Ultimas Publicaciones
+Sticky: Fijado
+Featured: Destacado
+Spanish: Español
+English: Ingles
+
+SearchBar: Buscar en el sitio
+Search: Buscar
+PopularPosts: Posts Populares
+LastComments: Ultimos Comentarios
+CommentOn: Comento en
+PopularUsers: Usuarios Populares
+
+CryptosPortalStatics: Estadisticas CryptosPortal
+UsersOnline: Usuarios Conectados
+TotalPosts: Publicaciones Totales
+TotalCryptosDB: Cryptos En la base de datos
+
+#NewPost.html.Twig
+Title: Titulo
+Categories: Categorias
+LangCategories: Categorias de Lenguages
+SubCategories: Categorias de Temas
+Content: Contenido
+Tags: Tags
+MainPhoto: Foto Principal
+SubmitPost: Publicar
+Q&A: Preguntas y Respuestas
+
+#ViewPost.html.twig
+New User: Nuevo Usuario
+Reputation: De Reputacion
+Points: Puntos
+TotalLikes: Positivos Totales
+TotalDisLikes: Negativos Totales
+Comments: Comentarios
+Reply: Responder
+addComment: Agregar Comentario
+Language: Idioma
+PostInformation: Informacion de la publicación
+date.format: d/m/Y
+time.format: g:i A
+
+#NewPosts.html.twig
+NewPost: Estás a punto de crear nuevo contenido
+did you know: Sabias que
+With the content you create you are improving the community: Con el contenido que creas estás mejorando la comunidad.
+At CryptosPortal we love you: En CryptosPortal te queremos &#10084;
+With the content created by you, you will be helping thousands of surfers to be more informed every day: Con el contenido creado por ti, estarás ayudando a miles de navegantes a estar cada día más informados.
+Try to include many images, this can make other people understand better what you are trying to explain: Trate de incluir muchas imágenes, esto puede hacer que otras personas entiendan mejor lo que está tratando de explicar.
+If you copy content from another site, do not forget to include the source at the bottom of the publication: Si copia contenido de otro sitio, no olvide incluir la fuente al final de la publicación.
+
+#Notifications.html.twig
+Commented: Comento
+
+#Messages.html.twig
+NewMessage: Nuevo Mensaje
+Recipient: Nickname del destinatario
+Subject: Asunto
+SendedMG: Te envio un mensaje
+
+#MessagesSent.html.twig
+SentMG: Enviaste 
+
+#NewCommunity.html.twig
+NameCommunity: Name for you comunnity
+NameCommunity_placeholder: BicoinNauts
+NameCommunity_description: Your community description

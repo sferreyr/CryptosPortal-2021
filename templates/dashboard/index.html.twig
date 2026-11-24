@@ -1,0 +1,431 @@
+{#
+⠀⢀⣀⠤⠤⢤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠛⠒⠒⢲⠠⡠⠤⣀⣀⣀⠀⠀⠀⠀⠀⠖⠒⠒⠒⠚⠓⠣⣀⡀⠀⠀⠀⠀⡇⣇⠀⢀⠇⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⢠⢤⠀⣀⣀⣀⡠⠤⠤⠤⠒⠒⠒⠒⠉⠉⢉⣃⣀⣀⣀⠤⠤⠤⠤⠔⠒⠒
+⢩⡁⠀⠀⡇⡞⠒⠒⠒⠤⠤⠤⢄⣀⣀⣀⠀⠀⠀⠈⠉⠁⠀⠀⠀⠀⠉⠉⠉⠑⠒⠒⢒⢢⠤⠤⣀⣀⣀⠈⠉⠉⠑⠒⣒⣇⣀⠌⡆⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠸⠄⡏⠀⠀⠀⢀⠤⠖⢰⠒⢒⠊⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠊⠉⡉⠽⡀⡇⠀⠉⡖⡖⠒⠒⢢⢤⠤⠤⠭⠉⠉⣑⠒⠒⠒⠤⠤⠤⢄⣀⣀⣀⠀⠀⢈⣁⠤⠤⠒⠒⠤⠬⣉⣉⠉⣹⠁⠦⠤⠤⠇⣄⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⡖⠒⠋⠉⠀⡇⢸⠱⢹⠘⣄⣀⢨⣂⣚⣀⣀⣀⠄⠀⠤⠤⠤⠤⠒⠒⠒⠒⢲⡀⠀
+⠤⠤⠖⠃⢠⢡⠠⠤⠉⢩⠉⣕⡆⠚⠀⢠⠀⠸⠽⢀⣀⢰⣲⠁⠒⢠⠤⠤⠤⢤⠉⢉⡉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⢤⡀⠀⠀⢀⢠⢼⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⢸⠀⠀⠀⠀⠀⡇⠈⠂⢨⠸⣒⣖⡪⠤⠤⠤⠤⠒⠒⠒⠒⠒⠊⠉⠉⠉⠉⣉⣱⠀⠀
+⡉⠒⠦⡄⠌⢸⠀⠀⣀⣀⡉⠀⢄⠙⠉⡁⡉⠉⠒⠚⠚⠦⠄⠛⠲⠸⢄⣀⣂⡞⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⠒⠊⢸⢺⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡜⣀⠀⢸⠀⠀⠀⠀⠀⡇⠀⢸⢸⠀⢀⠖⠒⠒⡒⠒⠒⠒⠉⠉⠉⠉⠉⢉⠉⠉⠉⡄⠀⠀⠀
+⠒⣂⣃⡇⢠⢼⠈⠉⠀⡀⠀⡏⠀⠒⠖⠤⣈⢂⡐⠒⢤⠤⠤⠖⠂⡴⠒⠒⢲⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⡧⢰⠉⠘⠙⡆⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠖⠉⠉⠀⠀⠈⣉⠘⠒⢦⡀⠀⢠⠃⠀⢸⢸⠐⢸⠠⠤⠔⠐⠢⠒⠒⠒⠒⠒⠒⠒⠒⠑⠒⠊⠑⢲⠀⠀
+⢪⠡⡖⢣⢸⢹⠀⠀⠠⠤⡀⠑⡄⠀⠀⣰⠃⠀⡇⠀⠀⡗⠀⠀⠀⡇⠀⠀⡸⠀⠀⠈⣉⠴⠋⠉⠳⢤⣀⡠⠞⠼⡄⠀⠀⠀⢰⠈⡑⠒⠒⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠒⠒⠒⠒⠉⠉⠀⠉⠙⠆⠙⡠⣸⠀⠀⢸⠸⡀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⡸⠤⢧⢸⢸⢺⠀⡄⠈⡧⡇⡤⠛⠒⣆⠁⢲⣲⢸⢀⡰⠋⠰⠭⡅⠁⡆⢠⠇⠀⢀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⣄⠀⡸⠑⢲⡠⢴⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡸⠁⠤⠤⠖⠒⠒⠒⠶⠉⠉⠉⠑⠒⠃⠈⠀⠀⢸⠀⡇⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⠐⡅⠼⢸⠸⣸⠀⠓⠦⠭⡛⠁⠀⠀⠘⠢⡜⠚⢚⠐⠂⣠⠂⡠⣎⣀⢧⠏⣄⢠⠏⢀⡤⠔⠤⠤⣀⡀⡀⠀⠀⠀⠀⢀⢼⠀⡇⣀⣠⠧⠴⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢎⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠐⠀⡆⡄⠀⠘⠂⡇⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⠀⠉⢲⢸⠀⡖⣅⠐⠂⢳⠁⢖⡲⠠⠤⠀⠈⠒⣺⠀⠉⠈⢸⠁⡆⠀⠰⡀⣃⡎⠀⢘⣔⣒⠂⠀⠐⣍⡀⠔⠒⠉⠑⠲⡜⡄⢧⠀⡇⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⢀⣀⣀⢈⣀⣀⣀⣀⣐⣀⠤⢄⡀⠜⠤⠇⣐⢀⠀⡇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀
+⠀⠀⠘⠼⠀⣇⢰⠣⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠭⠥⠤⠥⠥⠤⠤⡟⠈⠀⠀⠀⠲⠬⠤⠤⠚⠁⠉⡆⠀⠀⠀⣀⡇⡇⢸⠤⣅⣀⣀⣀⣘⣀⣀⣀⣀⣉⣉⣉⣉⣉⣙⣀⣀⣀⣀⣀⣀⢈⠧⣠⠶⠒⠁⠀⠈⠄⠀⠀⠠⠤⠄⢹⠀⣄⠔⠁⠸⠀⠎⠓⠔⠒⠒⠒⠒⠒⡆⠀⠀⠀⢠⠤⠤⡤⠤⠤⡤⠇⠀⠀
+⠤⠤⠬⠤⠤⠧⠼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠀⡀⢈⡤⠤⡊⠀⠀⣀⢟⠈⡒⠚⠁⠀⣲⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⢰⠠⠤⠤⠤⠤⠤⠤⠸⡀⢠⣤⣀⣀⡀⣰⠃⢧⠠⠤⠤⠔⠒⠋⣄⠘⠆⢸⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢡⠊⠉⠉⠉⠒⠒⠈⠉⠉⠀⠀⠀⠀
+⣀⣀⣀⣀⣀⡀⣀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡠⠤⠤⠤⠤⠤⠤⡞⠀⠃⢴⠋⢠⠆⠙⠢⠴⠣⠤⠗⠳⠐⠆⣀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⢣⠁⠀⠀⠀⢀⠇⣀⡃⢁⣄⣇⠀⠀⠀⠈⠇⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⢸⠀⠀⠀⠀⣀⠤⠤⠔⠒⠉⠉⠁⠀⠀⠀⠀⣠⠖⣊⠥⠂⡇⠀⠀⢱⢀⣚⣒⠒⢫⠀⠀⠀⠀⠀⠀⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⢀⣠⠞⣉⣉⣀⡨⠥⠤⠈⠋⡎⠉⠉⠇⠀⡸⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⠃⠭⠱⠤⠼⠘⡄⢀⡴⠋⠀⠐⠂⠉⠉⠈⠉⠀⠀⠀⠀⡼⠑⡼⠁⡔⠀⡇⢰⠤⢍⡀⠃⠐⡄⠋⠀⠠⠒⠒⠎⣀⢧⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣀⣀⡠⠴⠂⡱⠀⢤⡰⠁⠀⠒⢀⣀⣀⣀⣠⠏⡁⠀⠀⢸⠀⢀⣈⡙⠲⠄⢰⠒⠒⢲⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡖
+⠈⠀⠀⠀⠀⠁⡴⢁⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⡁⡼⠁⢠⠇⠀⡇⠸⡀⠀⢻⡀⠀⡣⢄⠤⠊⢀⣠⠔⠃⠀⠘⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⠔⠁⡐⠧⣀⣀⠀⡴⠃⢦⢀⡉⠉⠉⢹⡁⣀⠀⠀⠈⠑⠁⠀⢀⠎⢀⣉⠤⠒⢋⣩⠬⠑⠒⠊⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀
+⠒⠒⠒⠒⠒⠁⡕⠺⠀⠀⠀⠀⠀⠀⣏⠓⠦⢄⡀⠀⢰⠁⣸⠁⠀⣸⠀⠀⣇⠀⠙⢦⣀⠙⠖⠤⠤⠤⠴⠋⠀⠀⠀⠘⠒⠀⠈⠉⠒⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠚⣠⠞⠁⠀⠀⢀⢞⠁⠀⡼⢠⠸⣄⠀⠀⠋⣁⠀⠀⣀⡤⠞⡢⢊⠀⠀⢀⡴⠚⠉⠀⠀⠀⠀⢀⣀⠜⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢀
+⠀⠀⠀⠀⠀⠀⢱⠀⢀⣐⠤⣀⣀⣀⡘⠢⢄⡀⠙⢦⠸⣠⠃⠀⠀⠃⢀⡆⠉⠋⠀⠠⡈⡳⠦⠤⠤⠄⡰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠈⢢⠒⠒⠘⢁⠎⡠⢠⠃⠸⡀⠘⡏⢉⠉⠀⠙⡋⠁⠀⡼⠁⡞⠀⡤⠞⠀⠀⠀⠀⠀⠀⠞⠁⠈⢴⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢪
+⣀⣀⣀⣀⣀⡠⣀⢟⣁⣀⣀⣀⡀⠤⢬⠝⠒⠒⠒⠂⠓⡌⠀⠀⠀⢀⠏⠀⠀⠀⠀⠦⣨⡁⠀⠀⡔⠁⢂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⠀⠀⠀⠀⢠⠾⢁⠀⢠⠘⠀⠀⡴⢋⡔⡁⢸⡠⡄⢇⠀⢣⢸⣀⡠⢸⠀⢀⠜⡐⢸⠁⡄⢀⠘⢲⠤⣄⠀⠀⠀⢀⡠⠤⠤⠤⠤⡄⠀⠀⠀⠀⠀⠀⠀⠀⡸⣄
+⠀⠀⣀⣀⡠⠤⠎⠤⠒⠒⠒⠒⠓⢒⡆⠁⠀⠉⠉⠂⠂⢱⠀⠀⢠⠋⢸⢠⠀⠀⠀⠀⠀⠈⠉⡎⢠⠆⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡄⠀⠀⠀⠀⣠⠎⢠⣀⠀⠸⠀⢠⠞⠡⠊⡴⠁⡣⢤⠚⠀⢧⠸⡀⠀⠀⠸⡀⣪⡼⠁⡇⠀⡆⡎⡰⠚⠉⣨⠔⠤⢚⡡⠔⠊⡩⠐⠁⢱⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀
+⣊⣉⠀⠀⠀⠀⠑⢒⣒⣒⣒⠠⠌⡏⠀⠀⠀⠀⠀⠀⠀⠈⡆⠀⢪⡈⡌⠳⡅⠀⠀⠀⠀⠀⠀⡵⠃⢓⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⢠⠃⢤⠤⠬⠖⠂⡠⠜⠀⢠⠞⡱⠄⠇⡏⡤⡤⢸⠀⢪⠀⢀⡤⢞⠁⠀⣰⠁⠀⢈⡴⢁⡤⢊⡡⠔⠊⠁⠀⠀⢸⠁⠀⢀⣨⠂⠀⠀⠀⠀⠀⠀⣀⡤⠜
+⠀⠀⠉⠉⠉⠑⡢⠋⡠⠤⠐⠒⢾⠉⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠙⢦⣀⠑⢄⠀⠀⠀⠀⡼⢁⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⠏⠀⠀⠀⠀⠀⡼⠁⠀⠀⠋⡝⠁⠀⢸⠀⡏⠇⠀⡇⢸⢠⠞⠀⣈⠄⡞⠀⠀⠀⡜⠀⢠⠴⠋⠀⠀⠀⠀⠀⢸⠈⠀⣠⠏⠈⠀⠀⢀⡤⠴⠒⠉⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢱⣀⣐⠒⠂⠤⠞⠀⠀⠀⠀⠀⠀⠀⣠⠴⠀⠙⠲⣄⠀⠈⠓⢾⡀⠀⢀⠜⣠⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⣠⠞⠁⢀⠀⢀⣠⠇⠈⠲⠤⡀⠀⠀⡇⠀⠀⠈⠀⠉⠀⡞⢸⠂⠀⣠⠞⢁⢀⠇⠀⠀⢠⠃⠐⠋⠀⠀⠀⠀⠀⣀⣀⣚⣀⡩⠤⠚⡆⠀⠀⡇⢠⠒⠢⠤⠤⣀⣀
+⠒⠉⠉⠉⠉⠁⡆⠀⡄⠉⠉⠑⠦⣄⡀⠀⠀⠀⠀⢸⠧⢄⠀⠀⠀⠈⠓⢦⡀⠴⠋⠀⣌⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠘⣁⡠⡠⠴⠋⠉⠀⠀⠀⠀⡴⠃⠀⠀⡇⠀⠀⠀⠀⠀⠀⡸⢌⡴⢋⢁⡖⠸⢸⠀⠀⠀⣸⠀⠀⠀⠀⠀⠚⠉⠉⢱⠀⠀⠀⢦⠲⠀⡇⢀⣀⢉⠬⠤⠤⡄⠀⠀⣀
+⠀⠀⠀⠀⠀⠀⡇⢠⠊⠉⠁⠀⠀⠀⠈⠑⠒⠤⠤⣅⠐⠋⠀⠀⠀⠀⠀⠀⠙⠦⣀⠀⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⡀⠀⠀⢱⠀⠀⠀⠀⠀⠀⢀⣰⠋⠉⠀⢱⠀⠀⢠⠃⠀⢄⠀⠀⠀⢸⠁⡼⠀⡎⢾⠀⡇⡇⣠⠤⠞⠁⠀⠀⠀⢠⠄⠀⠀⠀⡀⢱⠂⠀⠊⠀⡆⠃⢸⠈⢇⡤⠔⠚⠀⡰⠉⠀
+⠀⠀⠀⠀⠀⠀⡖⠉⠉⠉⠉⠉⠉⠉⠉⠉⠑⠒⣆⠈⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⢤⣀⠀⠀⠀⠀⠀⠀⢰⢋⣉⠤⠤⠤⠤⠤⣌⣉⡑⠚⣱⣀⡀⠀⠀⠜⠉⠀⠀⠀⢀⡞⢰⠀⢸⠀⠀⠀⠙⢆⠀⢸⢼⠀⡇⠁⡸⢰⢠⠃⠁⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⢠⠃⢘⠄⠀⠀⠀⡇⢀⠸⡀⢸⠀⠄⠀⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠓⢲⠂⠠⠌⠉⠉⠉⠉⠉⠁⠀⠈⡇⠀⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠒⠤⣀⡀⢀⡇⡀⠀⠀⠀⠀⠀⠀⠀⠐⠅⠈⠣⠤⠭⢍⣁⣉⣀⡀⠀⠀⢞⡀⠜⠀⡎⠀⠀⠀⠀⠘⠒⣼⢸⠀⢸⡠⠃⡎⡸⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠑⢲⠈⠀⠀⠀⢸⠂⢸⠀⡇⢸⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡴⠋⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⣄⡉⡱⣄⠀⠀⠀⠀⠀⢰⠃⠀⣠⠘⣄⠀⠀⠀⠀⠉⠓⠦⢄⣀⡄⠀⢇⡀⠀⠀⠀⠀⠀⠇⡜⠸⠁⠙⡤⢇⢧⣀⣀⠀⠀⠀⠀⠀⣋⢀⡤⢄⡀⣀⡎⠁⠀⠀⢀⠇⠀⠐⡆⠀⢱⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⡴⠋⠀⠀⠀⢱⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠘⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣩⠢⠈⠳⡂⠀⠀⠀⠎⠀⠰⡁⠀⠈⠑⡲⠠⢄⡀⠰⡄⠀⠀⠙⠒⠤⣈⠑⠎⠒⢢⠀⠀⡇⠀⣀⣀⡳⣄⣀⣇⣀⣉⣓⠦⣜⠈⣇⡈⠀⠀⣎⣀⠀⠀⠀⠀⡎⠀⠀⠀⢇⠀⢸⠀⠀⠀⠀⠀⢠⠯
+⠀⠀⢰⠁⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢧⡀⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⢠⠀⢰⠁⠈⠉⠒⠒⠺⠤⢍⡡⠍⠓⠤⠄⣀⣀⣊⡩⠤⠔⠒⠊⡉⡈⠉⣠⠄⠀⠠⢄⢘⢄⢰⠈⠳⣌⠳⣄⠙⢢⠀⠀⡎⠀⢠⠆⠞⠁⠀⠀⠀⠘⠂⡇⠀⠀⠀⠀⣰⠊⠁
+⠀⠀⡸⠀⠀⠀⠀⠀⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠢⢤⡀⠀⠀⠀⠙⠲⣄⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠞⠀⡈⡳⠤⢤⠀⠤⢄⠀⠀⠀⠀⠀⠀⡞⠁⠀⠀⠀⠀⠀⠀⡖⠉⢁⡼⣁⠀⠀⠀⠀⠑⢈⣉⠀⠀⠈⠳⣌⢣⠀⠑⢮⠤⣠⠏⠀⠀⠀⠀⢀⣀⣐⠂⠣⠀⠀⠀⡼⢡⠀⠀
+⠀⢰⠃⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠦⡄⠀⠀⠈⠓⡦⠄⠒⠲⡦⠀⡤⠒⠒⠒⠊⠉⠉⡠⠄⢀⠉⠑⠒⠚⠉⠱⡅⠀⠀⠀⠉⠒⠒⠒⠊⢸⠉⠉⠉⠉⠉⠉⠉⠁⡇⠓⠏⠀⠘⡥⠀⠀⢀⠞⠉⠈⠙⢦⣀⣠⠞⡉⢳⠀⡤⠞⠁⢰⠁⠀⠀⠀⠀⠀⠉⠉⠉⡇⠀⢰⠁⡎⠀⠀
+Santiago Ferreyra y Carlos Ferreyra
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	DashBoard CryptosPortal
+{% endblock %}
+{% block SubNav %}
+
+132132123
+	{# SUB MENU PARA CREACION DE POST Y INTERACTUAR CON EL MAIN BOARD#}
+	<div class="nav navcenter nav-tabs navbar-expand-lg">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent2" aria-controls="navbarContent2" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">
+				<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+			</span>
+
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarContent2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="{{ path('dashboard')}}" class="nav-link active">{{ 'Home'|trans }}</a>
+				</li>
+				{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+					<li class="nav-item">
+						<a href="{{ path('newpost')}}" class="nav-link">{{ 'New Post'|trans }}</a>
+					</li>
+				{% endif %}
+			
+				
+
+			</ul>
+
+			<div class="search_bar form-inline">
+				{{ form_start(SearchBar) }}
+				{{ form_widget(SearchBar.SearchBar) }}
+
+				{{ form_widget(SearchBar.Submit) }}
+				{{ form_end(SearchBar) }}
+			</div>
+
+		</div>
+	</div>
+	{# END SUB MENU PARA CREACION DE POST Y INTERACTUAR CON EL MAIN BOARD#}
+
+
+{% endblock %}
+
+{% block body %}
+
+
+	<body>
+
+
+		<div class="container">
+			<div
+				class="row">
+
+				{# MAINBOARD#}
+				<div class="MainBoard ">
+
+					<div class="mainboardfilters text-white bg-primary ">
+						<div class="categoryCryptodrop">
+							<label>{{ 'FilterbyCategory'|trans }}</label>
+
+							{{ form_widget(categorydrop.name) }}
+
+
+						</div>
+						<div class="categoryTopicdrop">
+							<label>{{ 'FilterbyTopic'|trans }}</label>
+							{{ form_widget(subcategorydrop.name) }}
+						</div>
+						<div class="Languagedrop">
+							<label>{{ 'FilterbyLanguage'|trans }}</label>
+							{{ form_widget(Languagedrop.name) }}
+						</div>
+					</div>
+					<br>
+
+					<div class="alert alert-dark" style="margin-top: 5px;" role="alert">
+						<i class="fas fa-bullhorn"></i>
+						Lee las reglas
+						<a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+						<span class="badge bg-info">New</span>
+					</h2>
+				</div>
+				<br>
+				<div
+					class="Dashboard">
+
+
+					{# Latest POST#}
+					<div class=" border mainboardborder">
+						<div class="border LatestPostTitle">
+							<h5 class="text-center  card-title">
+								<img src="{{ asset("img/misc/latestposticon.png") }}" style="height:30px; width:30px;">
+								{{ 'LatestPost'|trans }}
+							</h5>
+						</div>
+
+						{% for post in pagination %}
+
+							<div class="latestpost">
+
+
+								<div class="card">
+
+									{%if (  post.isFeatured == true  )%}
+										<div class="card-body isfeatured">
+										{% elseif post.isSticky == true  %}
+											<div class="card-body issticky">
+											{% else %}
+												<div class="card-body">
+												{% endif %}
+												<div class="specialicons">
+													{%if (  post.isSticky == true  )%}
+														<img src="{{ asset("img/misc/special/sticky.png") }}" title="{{ 'Sticky'|trans }}" alt="BTC" class="image rounded">
+													{% endif %}
+													{%if (  post.isFeatured == true  )%}
+														<img src="{{ asset("img/misc/special/featured.png") }}" title="{{ 'Featured'|trans }}" alt="BTC" class="image rounded">
+													{% endif %}
+
+
+													<img src="{{ asset(post.categories.photo) }} " title="{{post.categories.name}}" alt="BTC" class="image rounded">
+													<img src="{{ asset(post.subcategories.icon) }}" title="{{post.subcategories.name}}" alt="BTC" class="image rounded">
+
+													<small title="Lenguage">
+														[{{post.langcategories.name |trans}}]</small>
+
+
+												</div>
+
+
+												<div class="postdv">
+													<a href="{{path('viewpost', {'category':post.CategorySlug , 'ptitle':post.titleSlug }) }}">
+														<h6>{{(post.title) }}</h6>
+													</a>
+												</div>
+
+												<div
+													class="stats">
+
+													{# USER PROFILE #}
+													<span class="comments fa-stack fa-1x" data-count="	{{post.totalComments}}">
+														<i class="comments fas fa-comments fa-stack-1x fa-inverse"></i>
+													</span>
+
+													<span class="totallikes fa-stack fa-1x" data-count="{{post.totalLikes}}">
+														<i class="far fa-thumbs-up fa-stack-1x fa-inverse"></i>
+													</span>
+
+													<span class="totaldislikes fa-stack fa-1x" data-count="	{{post.totalDisLikes}}">
+														<i class="far fa-thumbs-down fa-stack-1x fa-inverse"></i>
+													</span>
+
+
+													<img src="{{ asset('') ~ post.user.avatar}}" alt="">
+
+													<a href="{{path('my_profileOther', {'nickname':post.user.nickname}) }}">
+														{{post.user.nickname }}</a>
+
+
+												</div>
+											</div>
+
+										</div>
+
+
+									</div>
+
+
+								{% endfor %}
+								{# display navigation #}
+								<div class="navigation">
+									{{ knp_pagination_render(pagination) }}
+
+								</div>
+								{# END display navigation #}
+							</div>
+
+
+							{#NUEVOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO ASK Y QUESTION#}
+
+							{# Latest Q&A POST #}
+							<div class="border mainboardborderR">
+								<div class="border QyAPostTitle">
+									<h5 class="text-center card-title">
+										<img src="{{ asset("img/misc/qyaicon.png") }}" style="height:30px; width:30px;">
+										{{ 'Q&A'|trans }}
+									</h5>
+								</div>
+								{% for post in pagination2 %}
+
+									<div class="QyA">
+
+
+										<div class="card">
+
+											{%if (  post.isFeatured == true  )%}
+												<div class="card-body isfeatured">
+												{% elseif post.isSticky == true  %}
+													<div class="card-body issticky">
+													{% else %}
+														<div class="card-body">
+														{% endif %}
+														<div class="specialicons">
+															{%if (  post.isSticky == true  )%}
+																<img src="{{ asset("img/misc/special/sticky.png") }}" title="{{ 'Sticky'|trans }}" alt="BTC" class="image rounded">
+															{% endif %}
+															{%if (  post.isFeatured == true  )%}
+																<img src="{{ asset("img/misc/special/featured.png") }}" title="{{ 'Featured'|trans }}" alt="BTC" class="image rounded">
+															{% endif %}
+
+
+															<img src="{{ asset(post.categories.photo) }} " title="{{post.categories.name}}" alt="BTC" class="image rounded">
+															<img src="{{ asset(post.subcategories.icon) }}" title="{{post.subcategories.name}}" alt="BTC" class="image rounded">
+
+															<small title="Lenguage">
+																[{{post.langcategories.name |trans}}]</small>
+
+
+														</div>
+
+
+														<div class="postdv">
+															<a href="{{path('viewpost', {'category':post.CategorySlug , 'ptitle':post.titleSlug }) }}">
+																<h6>{{(post.title) }}</h6>
+															</a>
+														</div>
+
+														<div
+															class="stats">
+
+															{# USER PROFILE #}
+
+															<span class="comments fa-stack fa-1x" data-count="	{{post.totalComments}}">
+																<i class="comments fas fa-comments fa-stack-1x fa-inverse"></i>
+															</span>
+
+															<span class="totallikes fa-stack fa-1x" data-count="{{post.totalLikes}}">
+																<i class="far fa-thumbs-up fa-stack-1x fa-inverse"></i>
+															</span>
+
+															<span class="totaldislikes fa-stack fa-1x" data-count="	{{post.totalDisLikes}}">
+																<i class="far fa-thumbs-down fa-stack-1x fa-inverse"></i>
+															</span>
+
+
+															<img src="{{ asset('') ~ post.user.avatar}}" alt="">
+
+															<a href="{{path('my_profileOther', {'nickname':post.user.nickname}) }}">
+																{{post.user.nickname }}</a>
+
+
+														</div>
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+										{% endfor %}
+										{# display navigation #}
+										<div class="navigation">
+											{{ knp_pagination_render(pagination2) }}
+
+										</div>
+										{# END display navigation #}
+									</div>
+								</div>
+
+
+							</div>
+
+
+							{#END  Latest Q&A POST#}
+
+						</div>
+
+
+						{# SEARCH BOX#}
+
+
+						{# END SEARCH BOX#}
+						{# FOOTER TAB#}
+							<div class="ltab shadow p-3 mb-5 rounded"> <div class="card  mb-3" style="max-width: 20rem;">
+								<div class="card-header">{{ 'PopularPosts'|trans }}</div>
+								<div class="card-body">
+									<div
+										class="popularpost">
+										{# TOP POST LIST #}
+										{% for post in toppost %}
+											{#<a href="{{ path('viewpost', {id:post.id}) }}">#}
+											<a href="{{path('viewpost', {'category':post.CategorySlug , 'ptitle':post.titleSlug }) }}">
+												<p class="card-text">{{(post.title) }}
+												</p>
+
+											</a>
+											<hr/>
+
+										{% endfor %}
+									</div>
+
+								</div>
+
+							</div>
+							<div class="card  mb-3" style="max-width: 20rem;">
+								<div class="card-header">{{ 'LastComments'|trans }}</div>
+								<div class="card-body">
+									<div class="lastcomments">
+										{% for latestcomments in latestcoments %}
+
+
+											<p class="card-text ">
+
+												<a href="{{path('my_profileOther', {'nickname':latestcomments.user.nickname}) }}">
+													{{latestcomments.user.nickname}}</a>
+												{{ 'CommentOn'|trans }}
+
+												<a href="{{path('viewpost', {'category':latestcomments.posts.CategorySlug , 'ptitle':latestcomments.posts.titleSlug }) }}">
+													{{latestcomments.posts.title}}
+												</a>
+											</p>
+											<hr/>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+
+							{# POPULAR USERS CARD#}
+							<div class="card  mb-3" style="max-width: 18rem;">
+								<div class="popularuser">
+									<div class="card-header">{{ 'PopularUsers'|trans }}
+										(TOP 10)</div>
+									<div class="card-body">
+										<div
+											class="topuser">
+											{# TOP USERS LIST #}
+											{% for users in topusers %}
+												<p class="card-text">
+
+													<a href="{{path('my_profileOther', {'nickname':users.nickname}) }}">
+														{{users.nickname }}</a>
+												</p>
+											</a>
+										</p>
+									{% endfor %}
+								</div>
+							</div>
+							
+						</div>
+						
+						{# END FOOTER TAB#}
+					</div>
+
+					{# END POPULAR USERS CARD#}
+	{# Cryptoportal Statics#}
+					<div class="card mb-3" style="max-width: 18rem;"> <div class="searchstatics">
+						<div class="card-header">{{ 'CryptosPortalStatics'|trans }}</div>
+						<div class="card-body">
+							<p>
+								<i class="fas fa-globe-americas"></i> {{ 'UsersOnline'|trans }}
+							</p>
+							<p>
+
+								<i class="fas fa-archive"></i> {{ 'TotalPosts'|trans }}
+								:
+								{{totalposts}}
+							</p>
+							<p>
+							<i class="fas fa-coins"></i>	{{ 'TotalCryptosDB'|trans }}
+								:
+								{{totalcryptos}}
+							</p>
+						</div>
+					</div>
+				</div>
+				{# END Cryptoportal Statics#}
+				</div>
+				
+				{# END LEFT TAB#}
+				{# RIGHT TAB#}
+
+
+			
+
+			</div>
+			{#END CONTAINER#}
+		</div>
+	</body>
+	{# END RIGHT TAB#}
+
+</div>{% endblock %}{% block footer %}{% endblock %}

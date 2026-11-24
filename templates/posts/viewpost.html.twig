@@ -1,0 +1,307 @@
+{#
+⠀⢀⣀⠤⠤⢤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠛⠒⠒⢲⠠⡠⠤⣀⣀⣀⠀⠀⠀⠀⠀⠖⠒⠒⠒⠚⠓⠣⣀⡀⠀⠀⠀⠀⡇⣇⠀⢀⠇⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⢠⢤⠀⣀⣀⣀⡠⠤⠤⠤⠒⠒⠒⠒⠉⠉⢉⣃⣀⣀⣀⠤⠤⠤⠤⠔⠒⠒
+⢩⡁⠀⠀⡇⡞⠒⠒⠒⠤⠤⠤⢄⣀⣀⣀⠀⠀⠀⠈⠉⠁⠀⠀⠀⠀⠉⠉⠉⠑⠒⠒⢒⢢⠤⠤⣀⣀⣀⠈⠉⠉⠑⠒⣒⣇⣀⠌⡆⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠸⠄⡏⠀⠀⠀⢀⠤⠖⢰⠒⢒⠊⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠊⠉⡉⠽⡀⡇⠀⠉⡖⡖⠒⠒⢢⢤⠤⠤⠭⠉⠉⣑⠒⠒⠒⠤⠤⠤⢄⣀⣀⣀⠀⠀⢈⣁⠤⠤⠒⠒⠤⠬⣉⣉⠉⣹⠁⠦⠤⠤⠇⣄⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⡖⠒⠋⠉⠀⡇⢸⠱⢹⠘⣄⣀⢨⣂⣚⣀⣀⣀⠄⠀⠤⠤⠤⠤⠒⠒⠒⠒⢲⡀⠀
+⠤⠤⠖⠃⢠⢡⠠⠤⠉⢩⠉⣕⡆⠚⠀⢠⠀⠸⠽⢀⣀⢰⣲⠁⠒⢠⠤⠤⠤⢤⠉⢉⡉⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⢤⡀⠀⠀⢀⢠⢼⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⢸⠀⠀⠀⠀⠀⡇⠈⠂⢨⠸⣒⣖⡪⠤⠤⠤⠤⠒⠒⠒⠒⠒⠊⠉⠉⠉⠉⣉⣱⠀⠀
+⡉⠒⠦⡄⠌⢸⠀⠀⣀⣀⡉⠀⢄⠙⠉⡁⡉⠉⠒⠚⠚⠦⠄⠛⠲⠸⢄⣀⣂⡞⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⠒⠊⢸⢺⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡜⣀⠀⢸⠀⠀⠀⠀⠀⡇⠀⢸⢸⠀⢀⠖⠒⠒⡒⠒⠒⠒⠉⠉⠉⠉⠉⢉⠉⠉⠉⡄⠀⠀⠀
+⠒⣂⣃⡇⢠⢼⠈⠉⠀⡀⠀⡏⠀⠒⠖⠤⣈⢂⡐⠒⢤⠤⠤⠖⠂⡴⠒⠒⢲⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⡧⢰⠉⠘⠙⡆⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠖⠉⠉⠀⠀⠈⣉⠘⠒⢦⡀⠀⢠⠃⠀⢸⢸⠐⢸⠠⠤⠔⠐⠢⠒⠒⠒⠒⠒⠒⠒⠒⠑⠒⠊⠑⢲⠀⠀
+⢪⠡⡖⢣⢸⢹⠀⠀⠠⠤⡀⠑⡄⠀⠀⣰⠃⠀⡇⠀⠀⡗⠀⠀⠀⡇⠀⠀⡸⠀⠀⠈⣉⠴⠋⠉⠳⢤⣀⡠⠞⠼⡄⠀⠀⠀⢰⠈⡑⠒⠒⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠒⠒⠒⠒⠉⠉⠀⠉⠙⠆⠙⡠⣸⠀⠀⢸⠸⡀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⡸⠤⢧⢸⢸⢺⠀⡄⠈⡧⡇⡤⠛⠒⣆⠁⢲⣲⢸⢀⡰⠋⠰⠭⡅⠁⡆⢠⠇⠀⢀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⣄⠀⡸⠑⢲⡠⢴⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡸⠁⠤⠤⠖⠒⠒⠒⠶⠉⠉⠉⠑⠒⠃⠈⠀⠀⢸⠀⡇⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⠐⡅⠼⢸⠸⣸⠀⠓⠦⠭⡛⠁⠀⠀⠘⠢⡜⠚⢚⠐⠂⣠⠂⡠⣎⣀⢧⠏⣄⢠⠏⢀⡤⠔⠤⠤⣀⡀⡀⠀⠀⠀⠀⢀⢼⠀⡇⣀⣠⠧⠴⠃⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢎⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠐⠀⡆⡄⠀⠘⠂⡇⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀
+⠀⠉⢲⢸⠀⡖⣅⠐⠂⢳⠁⢖⡲⠠⠤⠀⠈⠒⣺⠀⠉⠈⢸⠁⡆⠀⠰⡀⣃⡎⠀⢘⣔⣒⠂⠀⠐⣍⡀⠔⠒⠉⠑⠲⡜⡄⢧⠀⡇⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⢀⣀⣀⢈⣀⣀⣀⣀⣐⣀⠤⢄⡀⠜⠤⠇⣐⢀⠀⡇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀
+⠀⠀⠘⠼⠀⣇⢰⠣⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠭⠥⠤⠥⠥⠤⠤⡟⠈⠀⠀⠀⠲⠬⠤⠤⠚⠁⠉⡆⠀⠀⠀⣀⡇⡇⢸⠤⣅⣀⣀⣀⣘⣀⣀⣀⣀⣉⣉⣉⣉⣉⣙⣀⣀⣀⣀⣀⣀⢈⠧⣠⠶⠒⠁⠀⠈⠄⠀⠀⠠⠤⠄⢹⠀⣄⠔⠁⠸⠀⠎⠓⠔⠒⠒⠒⠒⠒⡆⠀⠀⠀⢠⠤⠤⡤⠤⠤⡤⠇⠀⠀
+⠤⠤⠬⠤⠤⠧⠼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠀⡀⢈⡤⠤⡊⠀⠀⣀⢟⠈⡒⠚⠁⠀⣲⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⢰⠠⠤⠤⠤⠤⠤⠤⠸⡀⢠⣤⣀⣀⡀⣰⠃⢧⠠⠤⠤⠔⠒⠋⣄⠘⠆⢸⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢡⠊⠉⠉⠉⠒⠒⠈⠉⠉⠀⠀⠀⠀
+⣀⣀⣀⣀⣀⡀⣀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡠⠤⠤⠤⠤⠤⠤⡞⠀⠃⢴⠋⢠⠆⠙⠢⠴⠣⠤⠗⠳⠐⠆⣀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⢣⠁⠀⠀⠀⢀⠇⣀⡃⢁⣄⣇⠀⠀⠀⠈⠇⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⢸⠀⠀⠀⠀⣀⠤⠤⠔⠒⠉⠉⠁⠀⠀⠀⠀⣠⠖⣊⠥⠂⡇⠀⠀⢱⢀⣚⣒⠒⢫⠀⠀⠀⠀⠀⠀⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⢀⣠⠞⣉⣉⣀⡨⠥⠤⠈⠋⡎⠉⠉⠇⠀⡸⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⠃⠭⠱⠤⠼⠘⡄⢀⡴⠋⠀⠐⠂⠉⠉⠈⠉⠀⠀⠀⠀⡼⠑⡼⠁⡔⠀⡇⢰⠤⢍⡀⠃⠐⡄⠋⠀⠠⠒⠒⠎⣀⢧⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣀⣀⡠⠴⠂⡱⠀⢤⡰⠁⠀⠒⢀⣀⣀⣀⣠⠏⡁⠀⠀⢸⠀⢀⣈⡙⠲⠄⢰⠒⠒⢲⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡖
+⠈⠀⠀⠀⠀⠁⡴⢁⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⡁⡼⠁⢠⠇⠀⡇⠸⡀⠀⢻⡀⠀⡣⢄⠤⠊⢀⣠⠔⠃⠀⠘⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⠔⠁⡐⠧⣀⣀⠀⡴⠃⢦⢀⡉⠉⠉⢹⡁⣀⠀⠀⠈⠑⠁⠀⢀⠎⢀⣉⠤⠒⢋⣩⠬⠑⠒⠊⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀
+⠒⠒⠒⠒⠒⠁⡕⠺⠀⠀⠀⠀⠀⠀⣏⠓⠦⢄⡀⠀⢰⠁⣸⠁⠀⣸⠀⠀⣇⠀⠙⢦⣀⠙⠖⠤⠤⠤⠴⠋⠀⠀⠀⠘⠒⠀⠈⠉⠒⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠚⣠⠞⠁⠀⠀⢀⢞⠁⠀⡼⢠⠸⣄⠀⠀⠋⣁⠀⠀⣀⡤⠞⡢⢊⠀⠀⢀⡴⠚⠉⠀⠀⠀⠀⢀⣀⠜⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢀
+⠀⠀⠀⠀⠀⠀⢱⠀⢀⣐⠤⣀⣀⣀⡘⠢⢄⡀⠙⢦⠸⣠⠃⠀⠀⠃⢀⡆⠉⠋⠀⠠⡈⡳⠦⠤⠤⠄⡰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠈⢢⠒⠒⠘⢁⠎⡠⢠⠃⠸⡀⠘⡏⢉⠉⠀⠙⡋⠁⠀⡼⠁⡞⠀⡤⠞⠀⠀⠀⠀⠀⠀⠞⠁⠈⢴⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢪
+⣀⣀⣀⣀⣀⡠⣀⢟⣁⣀⣀⣀⡀⠤⢬⠝⠒⠒⠒⠂⠓⡌⠀⠀⠀⢀⠏⠀⠀⠀⠀⠦⣨⡁⠀⠀⡔⠁⢂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⠀⠀⠀⠀⢠⠾⢁⠀⢠⠘⠀⠀⡴⢋⡔⡁⢸⡠⡄⢇⠀⢣⢸⣀⡠⢸⠀⢀⠜⡐⢸⠁⡄⢀⠘⢲⠤⣄⠀⠀⠀⢀⡠⠤⠤⠤⠤⡄⠀⠀⠀⠀⠀⠀⠀⠀⡸⣄
+⠀⠀⣀⣀⡠⠤⠎⠤⠒⠒⠒⠒⠓⢒⡆⠁⠀⠉⠉⠂⠂⢱⠀⠀⢠⠋⢸⢠⠀⠀⠀⠀⠀⠈⠉⡎⢠⠆⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡄⠀⠀⠀⠀⣠⠎⢠⣀⠀⠸⠀⢠⠞⠡⠊⡴⠁⡣⢤⠚⠀⢧⠸⡀⠀⠀⠸⡀⣪⡼⠁⡇⠀⡆⡎⡰⠚⠉⣨⠔⠤⢚⡡⠔⠊⡩⠐⠁⢱⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀
+⣊⣉⠀⠀⠀⠀⠑⢒⣒⣒⣒⠠⠌⡏⠀⠀⠀⠀⠀⠀⠀⠈⡆⠀⢪⡈⡌⠳⡅⠀⠀⠀⠀⠀⠀⡵⠃⢓⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⢠⠃⢤⠤⠬⠖⠂⡠⠜⠀⢠⠞⡱⠄⠇⡏⡤⡤⢸⠀⢪⠀⢀⡤⢞⠁⠀⣰⠁⠀⢈⡴⢁⡤⢊⡡⠔⠊⠁⠀⠀⢸⠁⠀⢀⣨⠂⠀⠀⠀⠀⠀⠀⣀⡤⠜
+⠀⠀⠉⠉⠉⠑⡢⠋⡠⠤⠐⠒⢾⠉⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠙⢦⣀⠑⢄⠀⠀⠀⠀⡼⢁⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⣠⠏⠀⠀⠀⠀⠀⡼⠁⠀⠀⠋⡝⠁⠀⢸⠀⡏⠇⠀⡇⢸⢠⠞⠀⣈⠄⡞⠀⠀⠀⡜⠀⢠⠴⠋⠀⠀⠀⠀⠀⢸⠈⠀⣠⠏⠈⠀⠀⢀⡤⠴⠒⠉⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢱⣀⣐⠒⠂⠤⠞⠀⠀⠀⠀⠀⠀⠀⣠⠴⠀⠙⠲⣄⠀⠈⠓⢾⡀⠀⢀⠜⣠⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⣠⠞⠁⢀⠀⢀⣠⠇⠈⠲⠤⡀⠀⠀⡇⠀⠀⠈⠀⠉⠀⡞⢸⠂⠀⣠⠞⢁⢀⠇⠀⠀⢠⠃⠐⠋⠀⠀⠀⠀⠀⣀⣀⣚⣀⡩⠤⠚⡆⠀⠀⡇⢠⠒⠢⠤⠤⣀⣀
+⠒⠉⠉⠉⠉⠁⡆⠀⡄⠉⠉⠑⠦⣄⡀⠀⠀⠀⠀⢸⠧⢄⠀⠀⠀⠈⠓⢦⡀⠴⠋⠀⣌⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠘⣁⡠⡠⠴⠋⠉⠀⠀⠀⠀⡴⠃⠀⠀⡇⠀⠀⠀⠀⠀⠀⡸⢌⡴⢋⢁⡖⠸⢸⠀⠀⠀⣸⠀⠀⠀⠀⠀⠚⠉⠉⢱⠀⠀⠀⢦⠲⠀⡇⢀⣀⢉⠬⠤⠤⡄⠀⠀⣀
+⠀⠀⠀⠀⠀⠀⡇⢠⠊⠉⠁⠀⠀⠀⠈⠑⠒⠤⠤⣅⠐⠋⠀⠀⠀⠀⠀⠀⠙⠦⣀⠀⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⡀⠀⠀⢱⠀⠀⠀⠀⠀⠀⢀⣰⠋⠉⠀⢱⠀⠀⢠⠃⠀⢄⠀⠀⠀⢸⠁⡼⠀⡎⢾⠀⡇⡇⣠⠤⠞⠁⠀⠀⠀⢠⠄⠀⠀⠀⡀⢱⠂⠀⠊⠀⡆⠃⢸⠈⢇⡤⠔⠚⠀⡰⠉⠀
+⠀⠀⠀⠀⠀⠀⡖⠉⠉⠉⠉⠉⠉⠉⠉⠉⠑⠒⣆⠈⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⢤⣀⠀⠀⠀⠀⠀⠀⢰⢋⣉⠤⠤⠤⠤⠤⣌⣉⡑⠚⣱⣀⡀⠀⠀⠜⠉⠀⠀⠀⢀⡞⢰⠀⢸⠀⠀⠀⠙⢆⠀⢸⢼⠀⡇⠁⡸⢰⢠⠃⠁⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⢠⠃⢘⠄⠀⠀⠀⡇⢀⠸⡀⢸⠀⠄⠀⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠓⢲⠂⠠⠌⠉⠉⠉⠉⠉⠁⠀⠈⡇⠀⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠒⠤⣀⡀⢀⡇⡀⠀⠀⠀⠀⠀⠀⠀⠐⠅⠈⠣⠤⠭⢍⣁⣉⣀⡀⠀⠀⢞⡀⠜⠀⡎⠀⠀⠀⠀⠘⠒⣼⢸⠀⢸⡠⠃⡎⡸⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠑⢲⠈⠀⠀⠀⢸⠂⢸⠀⡇⢸⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡴⠋⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⣄⡉⡱⣄⠀⠀⠀⠀⠀⢰⠃⠀⣠⠘⣄⠀⠀⠀⠀⠉⠓⠦⢄⣀⡄⠀⢇⡀⠀⠀⠀⠀⠀⠇⡜⠸⠁⠙⡤⢇⢧⣀⣀⠀⠀⠀⠀⠀⣋⢀⡤⢄⡀⣀⡎⠁⠀⠀⢀⠇⠀⠐⡆⠀⢱⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⡴⠋⠀⠀⠀⢱⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠘⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣩⠢⠈⠳⡂⠀⠀⠀⠎⠀⠰⡁⠀⠈⠑⡲⠠⢄⡀⠰⡄⠀⠀⠙⠒⠤⣈⠑⠎⠒⢢⠀⠀⡇⠀⣀⣀⡳⣄⣀⣇⣀⣉⣓⠦⣜⠈⣇⡈⠀⠀⣎⣀⠀⠀⠀⠀⡎⠀⠀⠀⢇⠀⢸⠀⠀⠀⠀⠀⢠⠯
+⠀⠀⢰⠁⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠐⢧⡀⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⢠⠀⢰⠁⠈⠉⠒⠒⠺⠤⢍⡡⠍⠓⠤⠄⣀⣀⣊⡩⠤⠔⠒⠊⡉⡈⠉⣠⠄⠀⠠⢄⢘⢄⢰⠈⠳⣌⠳⣄⠙⢢⠀⠀⡎⠀⢠⠆⠞⠁⠀⠀⠀⠘⠂⡇⠀⠀⠀⠀⣰⠊⠁
+⠀⠀⡸⠀⠀⠀⠀⠀⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠢⢤⡀⠀⠀⠀⠙⠲⣄⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠞⠀⡈⡳⠤⢤⠀⠤⢄⠀⠀⠀⠀⠀⠀⡞⠁⠀⠀⠀⠀⠀⠀⡖⠉⢁⡼⣁⠀⠀⠀⠀⠑⢈⣉⠀⠀⠈⠳⣌⢣⠀⠑⢮⠤⣠⠏⠀⠀⠀⠀⢀⣀⣐⠂⠣⠀⠀⠀⡼⢡⠀⠀
+⠀⢰⠃⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠦⡄⠀⠀⠈⠓⡦⠄⠒⠲⡦⠀⡤⠒⠒⠒⠊⠉⠉⡠⠄⢀⠉⠑⠒⠚⠉⠱⡅⠀⠀⠀⠉⠒⠒⠒⠊⢸⠉⠉⠉⠉⠉⠉⠉⠁⡇⠓⠏⠀⠘⡥⠀⠀⢀⠞⠉⠈⠙⢦⣀⣠⠞⡉⢳⠀⡤⠞⠁⢰⠁⠀⠀⠀⠀⠀⠉⠉⠉⡇⠀⢰⠁⡎⠀⠀
+Santiago Ferreyra y Carlos Ferreyra
+#}
+{% extends 'base.html.twig' %}
+
+
+{% block title %}
+	DashBoard CryptosPortal
+	{{parent()}}
+{% endblock %}
+{% block stylesheets %}
+
+	{{ encore_entry_link_tags('app') }}
+	{{ encore_entry_link_tags('viewpost') }}
+<script src="//www.google.com/recaptcha/api.js?hl={{ app.request.locale }}"></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+
+
+	<body>
+		{#START AUTOR POST BAR LEFT#}
+		<div class="AuthorPostBar col-md-2 card-body text-center  rounded-top">
+			<a href="{{path('my_profileOther', {'nickname':author}) }}">
+				<div class="AuthorBox">
+					<img src="{{ asset('') ~ authorAvatar}}" class="avatar" alt="">
+
+
+				</div>
+				<h5 class="mb-1 shadow-none">{{author }}</h5>
+			</a>
+			<h6>
+				{{ authorTitle.titleName |trans }}</h6>
+
+			<div class="AuthorInfo">
+				<ul class="list-group shadow-none">
+					<li class="list-group-item">
+						<div class="list-icon">
+
+							<img src="{{ asset("img/misc/reputation.png") }}" alt="BTC" class="image rounded">
+						</div>
+						<div class="list-details">
+							<span>{{authorReputation}}</span>
+							<small>{{ 'Reputation'|trans }}</small>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="list-icon">
+							<img src="{{ asset("img/misc/points.png") }}" alt="BTC" class="image rounded">
+						</div>
+						<div class="list-details">
+							<span>{{authorPoints}}</span>
+							<small>{{ 'Points'|trans }}</small>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		{#END AUTOR POST BAR LEFT#}
+		{#START AUTOR POST INFO RIGHT#}
+		<div class="AuthorPostinfo col-md-2 card-body text-center  rounded-top">
+
+			<h6>{{'PostInformation' |trans}}</h6>
+			{% for post in queryforInfoPost %}
+				<ul class="list-group shadow-none">
+					<li class="list-group-item">
+						<div class="list-icon">
+							{%if (  post.isSticky == true  )%}
+								<img src="{{ asset("img/misc/special/sticky.png") }}" title="{{ 'Sticky'|trans }}" alt="BTC" class="image rounded">
+							{% endif %}
+							{%if (  post.isFeatured == true  )%}
+								<img src="{{ asset("img/misc/special/featured.png") }}" title="{{ 'Featured'|trans }}" alt="BTC" class="image rounded">
+							{% endif %}
+							<img src="{{ asset(post.categories.photo) }} " title="{{post.categories.name}}" alt="BTC" class="image rounded">
+							<img src="{{ asset(post.subcategories.icon) }}" title="{{post.subcategories.name}}" alt="BTC" class="image rounded">
+						</div>
+						<b>{{ 'Language'|trans }}<small title="Lenguage">[
+								{{post.langcategories.name |trans}}
+								]</small>
+						</b>
+
+					</li>
+					<li class="list-group-item">
+						<div class="list-details" style="display: grid;">
+							<span class="Blazing">{{post.totalPoints}}</span>
+							<small>{{ 'Points'|trans }}</small>
+
+
+						</div>
+					</li>
+
+				</ul>
+			{% endfor %}
+		</div>
+		{#END AUTOR POST INFO RIGHT#}
+
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="viewpostbox">
+						<div class="card-header">
+							<div class="posttitle">
+								{{title}}
+							</div>
+							<div class="posttitle-info">
+								<p><small> {{createAt |date('date.format'|trans) }} </small> </p> - <p> <small> {{createAt|ago }}</small></p>
+								
+							</div>
+						</div>
+
+
+						<div class="card-body">
+
+							<p class="card-text">
+								{{content |safe_html}}
+							</p>
+
+						</div>
+						<div
+							class="card-footer">
+							{# NECESITAMOS CHEQUEAR SI EL USUARIO YA DIO SUS PUNTOS ANTERIORMENTE. PARA NO MOSTRAR ESTE CONTENIDO#}
+
+							{% if DisplayInteractions == true %}
+							<div class="btn-interactionl">
+
+								{% for i in 0 .. RemainPoints %}
+                                  {% if i > 0 %}
+								  
+								
+									<button class="points btn btn-info" data-is-cant="{{i}}" data-is-point="{{postId}}" type="button">
+										<small>{{i}}</small>
+									</button>
+								{% endif %}
+								{% endfor %}
+							
+							</div>
+							{% endif %}
+
+
+							<div class="btn-interactionr">
+
+								<div class="btn-likesr">
+
+									<button class="btn btn-info" id="Like" data-is-like="{{postId}}" type="button">
+										<i class="far fa-thumbs-up"></i>
+										<small class="totallikes">{{TotalLikes}}</small>
+									</button>
+									<button class="btn btn-info" id="DisLike" data-is-dislike="{{postId}}" type="button">
+										<i class="far fa-thumbs-down"></i>
+										<small class="totaldislikes">{{TotalDisLikes}}</small>
+									</button>
+								</div>
+								<div class="btn-socialr">
+
+									<button class="btn btn-info" type="button">
+										<i class="fab fa-facebook-square"></i>
+									</button>
+
+									<button class="btn btn-info" type="button">
+										<i class="fab fa-twitter-square"></i>
+									</button>
+
+
+								</div>
+								<p>Share in social or add like/dislike
+								</p>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class=" viewcommentbox">
+
+			<div class="container">
+				<div class="rounded row">
+
+					<div class="blog-comment">
+						<h3 class="text-center text-success border bg-light text-secondary" style="text-align:center;"><i class="fa fa-comments" aria-hidden="true"></i>
+							{{ 'Comments'|trans }}</h3>
+						<hr>
+
+						
+						<ul class="comments">
+							<li class="clearfix">
+								{% for comment in comments %}
+									<a href="{{path('my_profileOther', {'nickname':comment.user.nickname}) }}">
+										<img src="{{ asset('') ~ comment.user.avatar}}" class="avatar" alt="">
+									</a>
+
+									<div class="post-comments" id="{{comment.id}}">
+									<a href="{{path('my_profileOther', {'nickname':comment.user.nickname}) }}">{{comment.user.nickname}}</a>
+										<a href="#{{comment.id}}" > <p class="meta" style="float:right;">{{comment.createAt |ago  }}  </a>
+										</p>
+										<p>
+											{{comment.content|safe_html}}
+										</p>
+
+									</div>
+									<hr>
+								{% endfor %}
+
+							</li>
+							{# display navigation #}
+							<div class="navigation">
+								{{ knp_pagination_render(comments) }}
+							</div>
+							{# END display navigation #}
+
+							{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+								{% for message in app.flashes('Content') %}
+									<div class="alert alert-info alert-dismissible fade show">
+										{{ message }}
+										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+
+									</div>
+								{% endfor %}
+								{#Style for Comment BOX#}
+								<style>
+									#cke_1_contents {
+										min-height: 100px;
+										max-height: 250px;
+										max-lenght: 20;
+									}
+								</style>
+								{{ form_start(addcomment) }}
+							
+								{{ form_row(addcomment._token) }}
+							
+							 	{#CAPTCHA ONLY FORM. #}
+								{{ form_end(addcomment) }}
+
+
+							{% else %}
+								<div class="comments-register-login">
+									<a href="{{ path('app_register')}}">Register
+									</a>
+									/
+									<a href="{{ path('app_login')}}">Login
+									</a>
+									FOR COMMENT
+								</div>
+							{% endif %}
+
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+{% endblock %}
+{% block javascripts %}
+	{{ encore_entry_script_tags('app') }}
+	{{ encore_entry_script_tags('viewpost') }}
+	{{ encore_entry_script_tags('interaction') }}
+	<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+	<script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+{% endblock %}

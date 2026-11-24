@@ -1,0 +1,45 @@
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+require("../css/app.scss");
+
+require("bootstrap");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+/*
+ * Welcome to your app's main JavaScript file!
+ *
+ * We recommend including the built version of this JavaScript file
+ * (and its CSS file) in your base layout (base.html.twig).
+ */
+// any CSS you import will output into a single css file (app.css in this case)
+//Jquery UI LOAD
+require('jquery-ui/ui/widgets/droppable');
+
+require('jquery-ui/ui/widgets/sortable');
+
+require('jquery-ui/ui/widgets/selectable'); //Select 2 LOAD
+
+
+require('select2');
+
+require('select2/dist/css/select2.css'); //$('select').select2({ width: '100%', placeholder: "Select an Option", allowClear: true }) // change all select.
+
+
+require('@fortawesome/fontawesome-free/css/all.min.css');
+
+require('@fortawesome/fontawesome-free/js/all.js');
+
+require('bootstrap/dist/js/bootstrap.bundle'); //Prevent Double click
+
+
+(0, _jquery["default"])('form').submit(function () {
+  (0, _jquery["default"])(this).find(':submit').attr('disabled', 'disabled');
+}); //Get User lang
+
+var userLang = navigator.language || navigator.userLanguage,
+    countries = ['fr', 'de', 'it', 'ja', 'es'],
+    languagues = ['fr', 'de', 'it', 'ja', 'es'];
+console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

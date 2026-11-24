@@ -1,0 +1,94 @@
+#BASE.html.twig NAV
+Home: Home
+News: News
+Market Cap: Market Cap
+Messages: Messages
+Notifications: Notifications
+Profile: Profile
+My Settings: My Settings
+Logout: Logout
+Register: Register
+Login: Login
+
+#BASE.html.twig SUBNAV
+New Post: New Post
+Featured Post: Featured Post
+Sticky Post: Sticky Post
+
+#DashBoard.html.twig 
+FilterbyCategory: Filter by Category
+FilterbyTopic: Filter by Topic
+FilterbyLanguage: Filter by Language
+LatestPost: Latest Posts
+Sticky: Sticky
+Featured: Featured
+Spanish: Spanish
+English: English
+
+
+SearchBar: Search in the site
+Search: Search
+PopularPosts: Popular Posts
+LastComments: Last Comments
+CommentOn: Commented on
+PopularUsers: Popular Users
+
+CryptosPortalStatics: CryptosPortal Statics
+UsersOnline: Users Online
+TotalPosts: Total Posts
+TotalCryptosDB: Total CryptosDB
+
+#NewPost.html.Twig
+Title: Title
+Categories: Categories
+LangCategories: Language Categories
+SubCategories: Topic Categories
+Content: Content
+Tags: Tags
+MainPhoto: Main Photo
+SubmitPost: Submit
+
+Q&A: Questions and Answers
+
+#ViewPost.html.twig
+New User: New User
+Reputation: Reputation
+Points: Points
+TotalLikes: Total Likes
+TotalDisLikes: Total Dislikes
+Comments: Comments
+Reply: Reply
+addComment: Add Comment
+Language: Language
+PostInformation: Post Information
+date.format: m/d/Y
+time.format: g:i A
+
+
+#NewPosts.html.twig
+NewPost: You are about to create new content
+did you know: Did you know
+With the content you create you are improving the community: With the content you create you are improving the community.
+At CryptosPortal we love you: At CryptosPortal we love you &#10084;
+With the content created by you, you will be helping thousands of surfers to be more informed every day: With the content created by you, you will be helping thousands of surfers to be more informed every day.
+Try to include many images, this can make other people understand better what you are trying to explain: Try to include many images, this can make other people understand better what you are trying to explain.
+If you copy content from another site, do not forget to include the source at the bottom of the publication: If you copy content from another site, do not forget to include the source at the bottom of the publication.
+
+
+#Notifications.html.twig
+Commented: Commented
+
+#Messages.html.twig
+NewMessage: New Message
+Recipient: Nickname Recipient
+Subject: Subject
+SendedMG: sent you 
+
+#MessagesSent.html.twig
+SentMG: you sent 
+
+
+#NewCommunity.html.twig
+NameCommunity: Name for you comunnity
+NameCommunity_placeholder: BicoinNauts
+NameCommunity_description: Your community description
